@@ -17,6 +17,8 @@ Any time the service starts, a new set of data is downloaded from the source URL
 
 The data is then able to be analysed ad-hoc. 
 
+No functionality exists currently to force a restart on new data. A busy service that has been constantly on for 24+ hours will have stale data (presuming the data source refreshes daily). An admin can force a re-deploy through the console, if required. 
+
 # Warranty
 
 This service does not take into account data integreity or other issues with the changing of the format of the incoming data. It may break at any time. Always refer to the source. 
