@@ -1,8 +1,11 @@
-# NSW Covid Case Locations Datasette
+# NSW Covid Case Locations - Datasette Visualisation
 
 This service visualises the [NSW Ministry of Health - NSW COVID-19 case locations (CC)](https://data.nsw.gov.au/data/dataset/nsw-covid-19-case-locations) data using [Datasette](https://datasette.io/)
 
-Uses a [fork of datasette-cluster-map](https://github.com/glasnt/datasette-cluster-map) for the rich HTML popups. 
+Uses the `combo-branch` branch of a [fork of datasette-cluster-map](https://github.com/glasnt/datasette-cluster-map) for:
+
+  - rich HTML popups (isolated: html-popup branch)
+  - map hash implementation (from [pending feature](https://github.com/simonw/datasette-cluster-map/tree/map-hash/datasette_cluster_map) in datasette) (allows for saving the current zoom/location on the map)
 
 # Deploy
 

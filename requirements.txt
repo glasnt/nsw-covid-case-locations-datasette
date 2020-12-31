@@ -2,5 +2,6 @@ requests
 bs4
 sqlite-utils
 datasette
+
 #datasette-cluster-map
-git+git://github.com/glasnt/datasette-cluster-map.git@html-popup#egg=datasette-cluster-map
+git+git://github.com/glasnt/datasette-cluster-map.git@combo-branch#egg=datasette-cluster-map
