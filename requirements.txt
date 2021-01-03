@@ -5,3 +5,4 @@ datasette
 
 #datasette-cluster-map
 git+git://github.com/glasnt/datasette-cluster-map.git@map-hash-merged-html#egg=datasette-cluster-map
+datasette-vega
