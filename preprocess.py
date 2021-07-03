@@ -1,4 +1,5 @@
 import requests
+import codecs
 from bs4 import BeautifulSoup as bs
 from sqlite_utils import Database
 import json
@@ -20,7 +21,9 @@ else:
     sys.exit(1)
 
 # Get JSON data.
-data = requests.get(data_uri).json()
+response = requests.get(data_uri)
+encoded = codecs.decode(response.text.encode(), 'utf-8-sig')
+data = json.loads(encoded)
 
 # Build SQLite Database
 db = Database(OUTPUT_DB, recreate=True)
